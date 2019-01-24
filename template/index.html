@@ -3,10 +3,13 @@
 {% block pageTitle %}Home{% endblock %}
 {% block style %}
 <link rel="stylesheet" href="{{ url_for('static',filename='styles/generalstyle.css') }}"/>
+<script src="stylesheet" href="{{ url_for('static',filename='js/jshandler.js') }}"></script>
+
 {% endblock %}
-{% block body %}
-<h1> Welcome to my book review website </h1>
-<p>
-Register to find new books to read! you can write reviews and see what others have to say about the books.
-</p>
+<p>Enter currency to conver</p>
+<form>
+	<input type="text" id="currency"></input>
+	<input type="submit" value="Submit" id="submit"></input>
+</form>
+
 {% endblock %}
